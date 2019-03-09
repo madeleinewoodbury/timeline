@@ -64,6 +64,7 @@ body {
   padding: 1rem;
   background: var(--secondary-color);
   border-radius: 10px;
+  text-align: center;
 }
 
 /* Right Side Boxes */
@@ -74,6 +75,18 @@ body {
 /* Left Side Boxes */
 #timeline ul li:nth-child(even) .timeline-div {
   left: -434px;
+}
+
+#timeline ul li:nth-child(odd) .timeline-div h3 {
+  text-align: left;
+}
+
+#timeline ul li .timeline-div h2 {
+  margin-top: -25px;
+}
+
+#timeline ul li:nth-child(even) .timeline-div h3 {
+  text-align: right;
 }
 
 /* Image */
