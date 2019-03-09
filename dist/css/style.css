@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+/* Variables */
+:root {
+  --primary-color: #b0cfde;
+  --secondary-color: #778899;
+  --max-width: 1100px;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Titillium Web", sans-serif;
+  background: var(--primary-color);
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+/* Header */
+#main-header {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-header h1 {
+  font-size: 2.5rem;
+}
