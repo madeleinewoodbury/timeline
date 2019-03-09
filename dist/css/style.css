@@ -65,16 +65,22 @@ body {
   background: var(--secondary-color);
   border-radius: 10px;
   text-align: center;
+  transition: all 0.5s ease-in-out 0.3s;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* Right Side Boxes */
 #timeline ul li:nth-child(odd) .timeline-div {
   left: 40px;
+  transform: translate(200px, 0);
 }
 
 /* Left Side Boxes */
 #timeline ul li:nth-child(even) .timeline-div {
   left: -434px;
+  transition: transform 0.5s ease-in-out;
+  transform: translate(-200px, 0);
 }
 
 #timeline ul li:nth-child(odd) .timeline-div h3 {
@@ -116,6 +122,7 @@ body {
   height: 25px;
   background: inherit;
   border-radius: 50%;
+  transition: background 0.5s ease-in-out;
 }
 
 /* Arrows */
@@ -140,4 +147,17 @@ body {
   right: -15px;
   border-width: 20px 0 20px 30px;
   border-color: transparent transparent transparent var(--secondary-color);
+}
+
+/* Show Boxes */
+#timeline ul li.show .timeline-div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+
+#timeline ul li.show:before {
+  background: var(--secondary-color);
+  transition-delay: 0.9s;
 }
